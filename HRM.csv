@@ -1,0 +1,179 @@
+id,title,description,preconditions,postconditions,tags,priority,severity,type,behavior,automation,status,is_flaky,layer,steps_type,steps_actions,steps_result,steps_data,milestone_id,milestone,suite_id,suite_parent_id,suite,suite_without_cases
+,,,,,,,,,,,,,,,,,,,,1,,Admin,1
+,,,,,,,,,,,,,,,,,,,,2,,PIM,1
+,,,,,,,,,,,,,,,,,,,,3,,Leave,1
+,,,,,,,,,,,,,,,,,,,,4,,Time,1
+,,,,,,,,,,,,,,,,,,,,5,,Recruitment,1
+,,,,,,,,,,,,,,,,,,,,6,,"My Info",1
+,,,,,,,,,,,,,,,,,,,,7,,Performance,1
+,,,,,,,,,,,,,,,,,,,,8,,Dashboard,1
+,,,,,,,,,,,,,,,,,,,,9,,Directory,1
+,,,,,,,,,,,,,,,,,,,,10,,Maintenance,1
+,,,,,,,,,,,,,,,,,,,,11,,Buzz,1
+1,"Search User admin","mencari user admin dari menu admin dengan username","Login akun orange HRM",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. klik tombol admin
+2. masukkan username
+3. pilih user role
+4. klik search
+","1. muncul menu admin
+2. 
+3. muncul pilihan admin dan Ess
+4. muncul user yang dicari
+","1. 
+2. admin
+3. admin
+4. 
+",,,1,,Admin,
+2,"Search by wrong username","cari user dengan username salah di menu admin","Login akun orange HRM dan masuk menu admin",,,medium,major,other,negative,is-not-automated,actual,no,unknown,classic,"1. masukkan username salah
+2. klik search
+","1. 
+2. muncul notifikasi user not found
+","1. admiiin
+2. 
+",,,1,,Admin,
+3,"edit user",,"Login akun orangeHRM dan masuk ke menu admin",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. klik edit di user list
+2. ubah user role
+3. klik save
+","1. muncul menu edit user
+2. 
+3. muncul notifikasi edit succes
+","1. Admin
+2. ESS
+3. 
+",,,1,,Admin,
+4,"Search employee information","mencari employee information dengan nama dan id benar","login akun orangeHRM dan buka menu PIM",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. masukkan employee name
+2. masukkan id employee
+3. klik search
+","1. 
+2. 
+3. muncul employee indformation yang dicari
+","1. david morris
+2. 0066
+3. 
+",,,2,,PIM,
+5,"search wrong employee information","mencari daftar employee information dengan nama benar dan id salah","login akun orangHRM dan buka menu PIM",,,high,major,other,negative,is-not-automated,actual,no,unknown,classic,"1. masukkan nama
+2. masukkan id
+3. klik search
+","1. 
+2. 
+3. muncul daftar list employee yang berkaitan dengan inputdata
+","1. aaliyah haq
+2. 0066
+3. 
+",,,2,,PIM,
+6,"add employee information","menambahkan akun employee","login akun OrangeHRM dan buka menu PIM",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. klik tombol +add
+2. masukkan nama
+3. klik save
+","1. 
+2. 
+3. daftar employee berhasil dibuat
+","1. 
+2. ajax yus
+3. 
+",,,2,,PIM,
+7,"Assign leave","membuat pengajuan cuti untuk employee","login akun orangeHRM dan masuk menu Leave",,,high,major,other,undefined,is-not-automated,actual,no,unknown,classic,"1. klik menu assign leave
+2. masukkan nama
+3. pilih leave type
+4. pilih tanggal
+5. pilih duration
+","1. muncul menu assign leave
+2. 
+3. 
+4. 
+5. muncul notifikasi succes
+","1. 
+2. aaliyah haq
+3. CAN - maternity
+4. 22-09-2022. 22-09-2022
+5. full day
+",,,3,,Leave,
+8,"apply leave",,"login akun orangeHRM dan masuk menu Leave",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. klik menu apply
+2. pilih leave type
+3. pilih tanggal
+4. pilih partial days
+5. klik apply
+","1. muncul menu apply
+2. 
+3. 
+4. 
+5. muncul notifikasi succes
+","1. 
+2. CAN - Bereavement
+3. 07-09-2022. 07-09-2022
+4. Start Day Only
+5. 
+",,,3,,Leave,
+9,"view timesheet",,"login akun orangeHRM dan buka menu time",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. klik view di samping akun
+","1. muncul informasi timesheet
+","1. aaliyah haq
+",,,4,,Time,
+10,"view my timesheet",,"login akun orangeHRM dan buka menu time",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. klik menu timesheet
+2. klik my timesheet
+","1. muncul pilihan
+2. menampilkan maytimesheet
+","1. 
+2. 
+",,,4,,Time,
+11,"Delete candidate record",,"login akun orangeHRM dan buka menu recruitment",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. klik tombol delete
+2. klik yes, delete
+","1. muncul pop up konfirmasi hapus record
+2. muncul notifikasi succes
+","1. 
+2. 
+",,,5,,Recruitment,
+12,"view candidate record",,"login akun orangeHRM dan buka menu recruitment",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. klik tombol view pada list record
+","1. muncul candidate recruitment record
+","1. charles haywire
+",,,5,,Recruitment,
+13,"Edit name",,"login akun orangeHRM dan buka menu My Info",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. masukkan middle name
+2. klik save
+","1. 
+2. muncul notifikasi succes
+","1. D.
+2. 
+",,,6,,"My Info",
+14,"view job detail",,"login akun orangeHRM dan buka menu My Info",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. klik tombol job
+","1. muncul job detail
+","1. 
+",,,6,,"My Info",
+15,"view trackers log",,"login akun orangeHRM dan buka menu Performance",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. klik tombol my trackers
+2. klik tombol view
+","1. menampilkan my performance trackers
+2. menampilkan trackers log
+","1. 
+2. 
+",,,7,,Performance,
+20,"View Employee Performance Trackers",,"login akun OrangeHRm dan buka menu performance",,,high,major,other,undefined,is-not-automated,actual,no,unknown,classic,"1. klik tombol employee tracker
+2. klik tombol view
+","1. menampilkan Employee Performance Trackers
+2. menampilkan Tracker for charlie
+","1. 
+2. charlie carter
+",,,7,,Performance,
+16,"view dashboard",,"login akun orangeHRM",,,high,major,other,undefined,is-not-automated,actual,no,unknown,classic,"1. klik tombol Dashboard
+","1. muncul menu dashboard
+","1. 
+",,,8,,Dashboard,
+17,"Search Directory",,"Login akun orangHRM dan masuk menu directory",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. pilh job title
+","1. menampilkan data terkait
+","1. acccount assistance
+",,,9,,Directory,
+18,"Download personal data",,"login akun orangHRM dan buka menu maintenance",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,"1. masukkan password
+2. klik confirm
+3. klik acces records
+4. masukkan nama
+5. klik tombol search
+6. klik download
+","1. 
+2. menampilkan menu purge
+3. menampilkan download personal data
+4. 
+5. menampilkan selected employee
+6. file terdownload
+","1. admin123
+2. 
+3. 
+4. aaliyah haq
+5. 
+6. 
+",,,10,,Maintenance,
+19,"View Buzz",,"login akun orangHRM dan buka menu buzz",,,high,major,other,positive,is-not-automated,actual,no,unknown,classic,,,,,,11,,Buzz,
